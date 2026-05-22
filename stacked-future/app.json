@@ -1,0 +1,58 @@
+{
+  "expo": {
+    "name": "Stacked Future",
+    "slug": "stacked-future",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "stacked-future",
+    "userInterfaceStyle": "dark",
+    "ios": {
+      "bundleIdentifier": "com.hlumelo.kronos",
+      "supportsTablet": false,
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/icon.png",
+        "backgroundColor": "#0d0f14"
+      },
+      "package": "com.hlumelo.kronos"
+    },
+    "web": {
+      "output": "server",
+      "favicon": "./assets/images/favicon.png"
+    },
+    "plugins": [
+      "@clerk/expo",
+      "expo-router",
+      "expo-secure-store",
+      [
+        "expo-splash-screen",
+        {
+          "backgroundColor": "#0d0f14"
+        }
+      ],
+      "expo-web-browser",
+      [
+        "@sentry/react-native/expo",
+        {
+          "url": "https://sentry.io/",
+          "project": "stacked-future",
+          "organization": "required-9d"
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "520d1dcb-edaf-494e-87e6-f7a276453bad"
+      }
+    },
+    "experiments": {
+      "typedRoutes": true,
+      "reactCompiler": true
+    }
+  }
+}
