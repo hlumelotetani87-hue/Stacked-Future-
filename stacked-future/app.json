@@ -43,7 +43,9 @@
           "project": "stacked-future",
           "organization": "required-9d"
         }
-      ]
+      ],
+      "@sentry/react-native",
+      "expo-image"
     ],
     "extra": {
       "eas": {
